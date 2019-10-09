@@ -9,6 +9,7 @@ import click
 from click import UsageError
 
 import mlflow.azureml.cli
+import mlflow.redisai.cli
 import mlflow.projects as projects
 import mlflow.data
 import mlflow.experiments
@@ -282,6 +283,7 @@ cli.add_command(mlflow.sagemaker.cli.commands)
 cli.add_command(mlflow.experiments.commands)
 cli.add_command(mlflow.store.cli.commands)
 cli.add_command(mlflow.azureml.cli.commands)
+cli.add_command(mlflow.redisai.cli.commands)
 cli.add_command(mlflow.runs.commands)
 cli.add_command(mlflow.db.commands)
 
